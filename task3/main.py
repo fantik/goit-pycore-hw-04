@@ -1,3 +1,5 @@
+#Tested with command like 
+
 import sys
 from pathlib import Path
 from colorama import Fore
@@ -24,6 +26,6 @@ if __name__ == "__main__":
       print('Please enter correct path')
       sys.exit()
 
-    #Resolving path(not sure, but works with absolute path as python3 main.py /ROOT/goit-pycore-hw-04/task3/picture)
+    #Resolving path(not sure, but works with absolute path as python3 main.py /ROOT/goit-pycore-hw-04/task3/picture after source .venv/bin/activate)
     path = Path(sys.argv[1]).resolve()
     main(path)
